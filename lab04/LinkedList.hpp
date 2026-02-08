@@ -59,5 +59,6 @@ class LinkedList : public List<T> {
         friend ostream& operator<<(ostream&, const LinkedList<U>&);
 };
 
-#include "LinkedList.h"
+#include "LinkedList.tpp"
 #endif
+
