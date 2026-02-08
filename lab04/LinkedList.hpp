@@ -3,7 +3,7 @@
 
 #include "List.hpp"
 #include <iostream>
-#inlcude <string>
+#include <string>
 using namespace std;
 
 template <typename T>
@@ -59,7 +59,5 @@ class LinkedList : public List<T> {
         friend ostream& operator<<(ostream&, const LinkedList<U>&);
 };
 
-#include "LinkedList.tpp"
+#include "LinkedList.h"
 #endif
-
-
