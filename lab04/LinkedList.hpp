@@ -3,6 +3,7 @@
 
 #include "List.hpp"
 #include <iostream>
+#inlcude <string>
 using namespace std;
 
 template <typename T>
@@ -60,4 +61,5 @@ class LinkedList : public List<T> {
 
 #include "LinkedList.tpp"
 #endif
+
 
