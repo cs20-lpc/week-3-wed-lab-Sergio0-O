@@ -31,10 +31,24 @@ int main()
     intList.remove(0);
     cout << intList;
 
+    cout << "\nEXCEPTION TEST: getElement(100)" << endl;
+    try {
+        intList.getElement(100);
+    } catch (string&s ) {
+        cout << s << endl;
+    }
+
     cout << "\nclear()" << endl;
     intList.clear();
     cout << intList;
     cout << "Length: " << intList.getLength() << endl;
+
+    cout << "\nEXCEPTION TEST: remove(0) on empty list" << endl;
+    try {
+        intList.remove(0);
+    } catch (string& s) {
+        cout << s << endl;
+    }
 
     cout << "\nDOUBLE DATATYPE" << endl;
     LinkedList<double> doubleList;
@@ -76,6 +90,13 @@ int main()
 
     cout << "\ngetElement(2)" << endl;
     cout << "Result: " << stringList.getElement(2) << endl;
+
+    cout << "\nEXCEPTION TEST: insert(10, \"oops\")" << endl;
+    try {
+        stringList.insert(10, "oops");
+    } catch (string& s) {
+        cout << s << endl;
+    }
 
     cout << "\nremove(3)" << endl;
     stringList.remove(3);
